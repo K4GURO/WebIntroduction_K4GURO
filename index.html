@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="K4GURO.png">
+    <link rel="icon" type="image/jpeg" sizes="192x192" href="K4GURO.png">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K4GURO | Developer Profile </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="isagi">
+
+    <div id="flash" class="theme-flash"></div>
+    <div id="glitch" class="glitch-overlay"></div>
+
+    <canvas id="fireCanvas"></canvas>
+    <canvas id="lightningCanvas"></canvas>
+    <canvas id="metaCanvas"></canvas>
+
+    <div class="menu-btn" id="menuBtn" onclick="toggleSidebar()"><div></div><div></div><div></div></div>
+    
+    <div class="theme-control">
+        <div class="theme-btn" id="gearBtn" onclick="document.getElementById('tMenu').classList.toggle('active')">⚙️</div>
+        <div class="theme-btn" id="muteBtn" onclick="toggleAudio()">🔊</div>
+        <div class="theme-menu" id="tMenu">
+            <div class="theme-opt" onclick="setTheme('isagi')" style="color:#00e5ff">Isagi</div>
+            <div class="theme-opt" onclick="setTheme('barou')" style="color:#ff0055">barou</div>
+            <div class="theme-opt" onclick="setTheme('bachira')" style="color:#ffcc00">bachira</div>
+            <div class="theme-opt" onclick="setTheme('nagi')" style="color:#ffffff">nagi</div>
+            <div class="theme-opt" onclick="setTheme('rin')" style="color:#00ffaa">rin</div>
+            <div class="theme-opt" onclick="setTheme('shidou')" style="color:#cc00ff">shidou</div>
+        </div>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <a href="https://t.me/K4GURO" target="_blank" class="side-item">Contact Developer</a>
+        <div class="side-item" onclick="openModal('work')">Work</div>
+        <div class="side-item" onclick="openModal('hobbies')">Hobbies</div>
+        <div class="side-item" onclick="openModal('friends')">Friends/Brother</div>
+        <a href="https://t.me/WHO_K4GURO" target="_blank" class="side-item special">
+            <span style="color: var(--accent); font-weight: 900;"> JOIN CHANNEL</span>
+        </a>
+    </nav>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div id="modalTitle" style="font-family:'Orbitron'; color:var(--accent); margin-bottom:20px; font-weight:900;"></div>
+            <div id="modalBody" style="line-height:1.6; font-size: 1.1rem; text-align: left;"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        
+        <!-- VISUAL CONTAINER ELEMENT -->
+        <div class="visual-side">
+            <img 
+                id="heroVideo"
+                src="K4GURO.png"
+                alt="LOGO"
+            </img>
+            <div style="margin-top: 15px; font-family: 'Orbitron'; font-size: 16px; color: var(--accent); letter-spacing: 8px; font-weight: 900; text-shadow: 0 0 10px var(--accent);">
+                DEVㅤㅤYOUㅤㅤKNOW
+            </div>
+        </div>
+
+        <!-- CORE CONTENT STREAM DATA -->
+        <div class="data-side">
+            <div class="header-box">
+                <h1>K4GURO</h1>
+                <p style="color: var(--accent); font-weight: 700; letter-spacing: 4px; font-size: 1rem; margin-top: 5px;">REAL NAME - ADITYA RAJ </p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card"><span class="stat-label">Birth Date</span><span class="stat-value">12 NOVEMBER</span></div>
+                <div class="stat-card"><span class="stat-label">Age</span><span class="stat-value">13+ [2012]</span></div>
+                <div class="stat-card"><span class="stat-label">Nationality</span><span class="stat-value">INDIA 🇮🇳</span></div>
+                <div class="stat-card"><span class="stat-label">Home Base</span><span class="stat-value">BIHAR</span></div>
+                <div class="stat-card"><span class="stat-label">Belief/Religion</span><span class="stat-value">HINDU</span></div>
+                <div class="stat-card"><span class="stat-label">Academic Rank</span><span class="stat-value">CONTINUING</span></div>
+            </div>
+
+            <div class="bot-container">
+
+
+                <hr style="border: 0.5px solid #444; margin: 40px 0;">
+
+                <div class="bot-header">
+                    <h2>Useful Websites</h2>
+                    <p>Quick access to our web-based resources</p>
+                </div>
+
+                <div class="bot-grid">
+                    <a href="https://k4guro.github.io/Whisper_Plus/" class="bot-link">Whisper +</a>
+                    <a href="https://k4guro.github.io/Linkify_Plus/" class="bot-link">Linkify +</a>
+                    <a href="https://k4guro.github.io/Infoinsta/" class="bot-link">JSON +</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"1ef674be6ad44261b543dcc5773c2e0a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
