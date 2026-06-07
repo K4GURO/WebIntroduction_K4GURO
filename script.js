@@ -69,12 +69,12 @@ function setTheme(t) {
     const logo = document.getElementById('heroVideo');
 
     const logos = {
-        isagi: "isagi.png",
-        barou: "barou.png",
-        bachira: "bachira.png",
-        nagi: "nagi.png",
-        rin: "rin.png",
-        shidou: "shidou.png"
+        isagi: "isagi.jpg",
+        barou: "barou.jpg",
+        bachira: "bachira.jpg",
+        nagi: "nagi.jpg",
+        rin: "rin.jpg",
+        shidou: "shidou.jpg"
     };
 
     flash.style.animation = 'flash-anim 0.4s ease-out';
