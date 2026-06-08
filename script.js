@@ -68,14 +68,6 @@ function setTheme(t) {
     const glitch = document.getElementById('glitch');
     const logo = document.getElementById('heroVideo');
 
-    const logos = {
-        isagi: "isagi.jpg",
-        barou: "barou.jpg",
-        bachira: "bachira.jpg",
-        nagi: "nagi.jpg",
-        rin: "rin.jpg",
-        shidou: "shidou.jpg"
-    };
 
     flash.style.animation = 'flash-anim 0.4s ease-out';
     glitch.style.display = 'block';
@@ -85,9 +77,6 @@ function setTheme(t) {
     setTimeout(() => {
 
         document.body.setAttribute('data-theme', t);
-
-        // CHANGE LOGO
-        logo.src = logos[t];
 
         document.getElementById('tMenu').classList.remove('active');
         document.getElementById('gearBtn').style.transform = 'rotate(0deg)';
