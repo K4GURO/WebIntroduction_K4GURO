@@ -48,7 +48,6 @@ const data = {
     friends: {
         title: "FRIEND CIRCLE",
         body: `<div style="display:flex; flex-direction:column; gap:10px;">
-            <a href="https://t.me/Lifee_is_XXX" target="_blank" style="color:var(--accent); text-decoration:none; border:1px solid var(--accent); padding:10px; text-align:center;">𝗔𝗘𝗧𝗘𝗥𝗡𝗬𝗫 ⚕</a>
             <a href="https://t.me/K4Gdev" target="_blank" style="color:var(--accent); text-decoration:none; border:1px solid var(--accent); padding:10px; text-align:center;">𓆰𝐊𝟒𝐆֟፝ ㅤᗪΞV</a>
             <a href="https://t.me/Aishi_k77" target="_blank" style="color:var(--accent); text-decoration:none; border:1px solid var(--accent); padding:10px; text-align:center;">Classic Aesthetics</a>
             <a href="https://t.me/HazMatX_02" target="_blank" style="color:var(--accent); text-decoration:none; border:1px solid var(--accent); padding:10px; text-align:center;">Bishes</a>
